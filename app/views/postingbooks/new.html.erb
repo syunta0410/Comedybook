@@ -1,0 +1,43 @@
+<div class="main-unit3">
+<div class="main-unit">
+<%= form_for @postingbook do |f| %>
+  <div class="top">
+  <h1>新規投稿</h1>
+  <h2>～投稿したい本の詳細～</h2>
+  </div>
+  
+  <div class="front">
+    <%= f.label :　　題名　　, class:"column"%>
+    <%= f.text_field :title, :size => 30, class:"form1"%>
+  </div>
+
+  <div class="front">
+   <%= f.label :　　筆者　　, class:"column" %>
+   <%= f.text_field :author, :size => 30, class:"form1" %>
+  </div>
+
+  <div class="front">
+   <%= f.label :アカウント名, class:"column" %>
+   <%= f.text_field :account, :size => 30, class:"form1" %>
+  </div>
+
+  <div class="front">
+   <%= f.label :　発行年数　, class:"column" %>
+   <%= f.text_field :released_year, :size => 30, class:"form1" %>
+  </div>
+
+  <div class="front">
+   <%= f.label :　　書影　　, class:"column" %>
+   <%= f.file_field :image, class:"form1" %>
+  </div>
+  
+  <div class="mar">
+  <%= f.submit "投稿する" %>
+  </div>
+<% end %>
+</div>
+<div class="back">
+<%= link_to "一覧に戻る", postingbooks_path %>
+</div>
+</div>
+<%= stylesheet_link_tag "P-new", :media => "all" %>

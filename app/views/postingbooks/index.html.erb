@@ -1,0 +1,50 @@
+<div class="background1">
+    <div class="first-block">
+      <div class="owarai-block1">
+        <%= image_tag("yamauchi.png",class: "reiwa_image") %>
+        <%= image_tag("chance.png",class: "heisei_image") %>
+        <%= image_tag("kinashi.png",class: "reiwa_image") %>
+        <%= image_tag("kojima.png",class: "heisei_image") %>
+        <%= image_tag("matayoshi.png",class: "reiwa_image") %>
+      </div>
+      <div class="logo">
+      <%= image_tag("logotitle.png", class: "logo_image", size: "520x100") %>
+      </div>
+      <div class="owarai-block2">
+        <%= image_tag("matsumoto.png",class: "heisei_image") %>
+        <%= image_tag("miyazaki.png",class: "reiwa_image") %>
+        <%= image_tag("o-kura.png",class: "heisei_image") %>
+        <%= image_tag("tamura.png",class: "reiwa_image") %>
+        <%= image_tag("iwai.png",class: "heisei_image") %>
+      </div>
+    </div>
+<br>
+<br>
+  <div class="main-place">
+    <div class="kensaku">
+        <h3>投稿された本</h3>
+        <h3>　</h3>
+        <%= form_tag({controller:"postingbooks",action:"index"}, method: :get) do %>
+          <%= text_field_tag :search %>
+          <%= submit_tag '検索する'  %>
+        <% end %>
+    </div>
+      <% @postingbooks.each do |t| %>
+        <div class="sub-place">
+            <div class="postingbook">
+              <%= t.title %>
+              <%= t.author %>
+              <%= t.released_year %>
+            </div>
+            <div class="postingbook2">
+              <%= link_to "詳細", postingbook_path(t.id) %>
+              <% if user_signed_in? && current_user.id == t.user_id %>
+              <%= link_to "編集", edit_postingbook_path(t.id) %>
+              <%= button_to "削除", postingbook_path(t.id), method: :delete %>
+              <% end %>
+            </div>
+        </div>
+      <% end %>
+  </div>  
+</div>
+<%= stylesheet_link_tag "P-index", :media => "all" %>

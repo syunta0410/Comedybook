@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>書籍診断スタート</title>
+    </head>
+
+    <body>
+      <div class="check">
+        <div class="main-box">
+            <div class="start">
+                <h6>！あなたに合った本診断！</h6>
+            </div>
+            <div class="nakami">
+                <p>
+                世の中には沢山のお笑い本があって、どれが自分に合った本か探せない。<br>
+                ああ、そんなあなたにぜひこの診断を使ってほしい！<br>
+                作者が独断と偏見により作成したこの診断を使えば、<br>
+                あなたの性格に合った本がみつかるかも！？<br>
+                </p>
+            </div>
+        </div>
+        <div class="sub-box">
+                <%= link_to "診断を始める", new_perfume_path, class: "link" %>
+                <%= link_to "一覧に戻る", postingbooks_path %>
+        </div>
+      </div>
+    </body>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+
+    <%= stylesheet_link_tag "Pe-index", :media => "all" %>  

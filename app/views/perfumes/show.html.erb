@@ -1,0 +1,80 @@
+<div class="result-box">
+    <div class="intoro">
+        <h5>診断結果</h5>
+        <p>あなたにおすすめの香りは…</p>
+    </div>
+        <div class="tweet-container">
+            <div class="tweet">
+              <div class="show-text">
+                    <% if @perfume.question == "111" %>
+                    <h6>寝苦しい夜の猫</h6>
+                    <p>　</p>
+                    <p>かまいたち・山内の渾身の一作！</p>
+                    <p>　</p>
+                    <p>幼少青年期から2019年のM-1、
+                       半生が一気に綴られたエッセイ。<br>
+                       今やテレビに出突っ張りの彼が、
+                        どういった人生を歩んできたのか、
+                       あなたの人生の指針になるかも？
+                    </p>
+              </div>
+                <%= image_tag("yamauchi.png",class: "yamauchi_image") %>
+              <div class="show-text">
+                    <% elsif @perfume.question == "112" %>
+                    <h6>シトラス</h6>
+                    <p>オレンジに似た柑橘系の果物</p>
+                    <p>リラックス効果がある</p>
+              </div>
+              <div class="show-text">
+                <% elsif @perfume.question == "121" %>
+                <h6>ローズ</h6>
+                <p>華やかで上品な香り</p>
+                <p>ストレスを緩和してくれる効果がある</p>
+              </div>
+              <div class="show-text">
+                <% elsif @perfume.question == "122" %>
+                <h6>ラベンダー</h6>
+                <p>優しく女性らしい香り</p>
+                <p>気持ちを落ち着かせてくれる</p>
+              </div>
+              <div class="show-text">
+                <% elsif @perfume.question == "211" %>
+                <h6>ジャスミン</h6>
+                <p>爽やかなのに官能的な香り</p>
+                <p>幸福感を得やすい</p>
+              </div>
+              <div class="show-text">
+                <% elsif @perfume.question == "212" %>
+                <h6>自意識とコメディの日々</h6>
+                <p>　</p>
+                <p>関東芸人好きのあなたへ</p>
+                <p>　</p>
+                <p>バナナマン、おぎやはぎ、東京03… <br>
+                    大人気の関東芸人たちに誰より近く、<br>
+                    誰よりもその凄さに圧倒されてきた <br>
+                    男が記す青春譚！
+                    ラジオ好きで慎重な性格のあなたは
+                    彼の生き方に共感すること間違いなし。
+                </p>
+              </div>
+                <%= image_tag("o-kura.png",class: "yamauchi_image") %>
+              <div class="show-text">
+                <% elsif @perfume.question == "221" %>
+                <h6>アップル</h6>
+                <p>特徴的で甘い香り</p>
+                <p>万人受けしやすい</p>
+              </div>
+              <div class="show-text">
+                <% elsif @perfume.question == "222" %>
+                <h6>ユーカリ</h6>
+                <p>しっかりとした優しい香り</p>
+                <p>浄化作用があり。気持ちを落ち着かせてくれる</p>
+              </div>
+                <% end %>
+            </div>
+        </div>
+       <%= link_to "一覧に戻る", postingbooks_path %>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+</div>

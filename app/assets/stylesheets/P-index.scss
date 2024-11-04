@@ -1,0 +1,77 @@
+  .logo {
+    width: 50px;
+    height: 20px;
+    position: relative;
+    padding-top: 22%;
+    margin-left: 31%;
+  }
+
+  .first-block{
+    position: relative;
+      width: 100%;
+      height: 600px;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .owarai-block1 {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+
+  .owarai-block2 {
+    margin-top: 100px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+  }
+
+  .reiwa_image{
+    margin-top: 25px;
+    width: 10%;
+    margin-left: 60px;
+    margin-right: 60px;
+    height: 10%;
+    margin-bottom: 100px;
+  }
+
+  .heisei_image{
+    margin-top: 40px;
+    width: 8%;
+    margin-left: 60px;
+    margin-right: 60px;
+    height: 8%;
+    margin-bottom: 100px;
+  }
+  
+  .main-place {
+    padding-bottom: 200px;
+    margin-top: 80px;
+  }
+
+  .kensaku{
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  .sub-place {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    border-top: solid #FF8F2E;
+  }
+
+  .postingbook {
+    margin: 20px;
+  }
+
+  .postingbook2 {
+    width: 100px;
+    margin-top: 5px;
+  }

@@ -1,0 +1,47 @@
+<%= form_for(@perfume, class: 'form-horizontal', role: 'form') do |f| %>
+    <div class="sindan-box">
+        <div class="row">
+            <div class="col-12">
+                <p>Question1. どちらかと言うと…</p>
+            </div>
+            <div class="question-one">
+                <div class="col-6">
+                    <p><%= f.check_box :question, {multiple: true}, "1", nil %>芸人が好きだ</p>
+                </div>
+                <div class="col-6">
+                    <p><%= f.check_box :question, {multiple: true}, "2", nil %>裏方が好きだ</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <p>Question2. 自分の価値観として近い方は…</p>
+            </div>
+            <div class="question-two">
+                <div class="col-6">
+                    <p><%= f.check_box :question, {multiple: true}, "1", nil %>ラジオが好きだ</p>
+                </div>
+                <div class="col-6">
+                    <p><%= f.check_box :question, {multiple: true}, "2", nil %>テレビが好きだ</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <p>Question3. 人と接するときは…</p>
+            </div>
+            <div class="question-three">
+                <div class="col-6">
+                    <p><%= f.check_box :question, {multiple: true}, "1", nil %>積極的なタイプだ</p>
+                </div>
+                <div class="col-6">
+                    <p><%= f.check_box :question, {multiple: true}, "2", nil %>慎重なタイプだ</p>
+                </div>
+            </div>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+        </div>
+    <div class="sindanbotan">
+        <%= f.submit "決定" %>
+    </div>
+     </div>
+    </div>
+<% end %>
+<%= stylesheet_link_tag "Pe-new", :media => "all" %>

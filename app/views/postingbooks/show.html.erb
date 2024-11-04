@@ -1,0 +1,25 @@
+<div class="main">
+  <div class="detail">
+    <div class="field">
+      <p><%= @postingbook.title %></p>
+      </div>
+      <div class="field">
+      <p><%= @postingbook.author %></p>
+      </div>
+      <div class="field">
+      <p><%= @postingbook.account %></p>
+      </div>
+      <div class="field">
+      <p><%= @postingbook.released_year %></p>
+    </div>
+  </div>
+  <div class="image">
+    <% @postingbooks.each do |t| %>
+    <%= image_tag t.image_url, size: "300x400" if t.image? %>
+    <% end %>
+  </div>
+</div>
+
+<%= link_to "編集する", edit_postingbook_path(@postingbook.id) %>
+<%= link_to "一覧に戻る", postingbooks_path %>
+<%= stylesheet_link_tag "P-show", :media => "all" %>

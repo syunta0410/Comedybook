@@ -1,0 +1,36 @@
+.result-box {
+    height: 600px;
+    text-align: center;
+    padding-top: 30px;
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.intoro  {
+    padding-bottom: 0px;
+}
+
+.tweet {
+    padding: 0.5em 1em;
+    margin: 2em 200px;
+    color: #000000;
+    background: #FAE8A8;
+    border-bottom: solid 6px #FDE07A;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+}
+
+.show-text {
+    margin: 50px;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.yamauchi_image{
+    margin: 50px;
+    width: 220px;
+    justify-content: space-around;
+  }

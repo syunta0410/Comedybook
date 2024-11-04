@@ -1,0 +1,11 @@
+<div class="edit-box">
+    <%= form_for @postingbook do |f| %>
+        <ul>
+        <li><%= f.label :編集 %></li>
+        <li><%= f.text_field :title, :size => 70, class:"edit-sub" %></li>
+        <li><%= f.text_field :author, :size => 70, class:"edit-sub" %></li>
+        <li><%= f.text_field :released_year, :size => 70, class:"edit-sub" %></li>
+        </ul>
+        <%= f.submit "完了する", class:"fin" %>
+    <% end %>
+</div>
